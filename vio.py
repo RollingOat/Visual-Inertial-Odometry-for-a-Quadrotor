@@ -22,7 +22,6 @@ def nominal_state_update(nominal_state, w_m, a_m, dt):
     # Unpack nominal_state tuple
     p, v, q, a_b, w_b, g = nominal_state
 
-    # YOUR CODE HERE
     new_p = np.zeros((3, 1))
     new_v = np.zeros((3, 1))
     new_q = Rotation.identity()
@@ -63,7 +62,7 @@ def error_covariance_update(nominal_state, error_state_covariance, w_m, a_m, dt,
     # Unpack nominal_state tuple
     p, v, q, a_b, w_b, g = nominal_state
 
-    # YOUR CODE HERE
+    
     R = q.as_matrix()
 
     calibrated_acce = (a_m - a_b).flatten()
