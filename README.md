@@ -2,7 +2,7 @@
 
 ## Task: Given IMU and stereo data during a flight, estimate the state of the quadrotor using error state Kalman filter
 
-## Summary of ESKF algorithm (Penn MEAM 620)
+## Summary of ESKF algorithm (Source: Penn MEAM 620)
 1. Initialize the filter with state vector **x** = (p, v, q, a~b, a~w, g) and error state covariance matrix, **p**.
 2. For each new imu reading or vision measurement
   - Compute time since last update, dt
